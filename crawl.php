@@ -51,7 +51,7 @@
 					
 					<?php
 
-						$output = shell_exec("python '{$GET['string']}'.py");
+						$output = shell_exec("python pa.py");
 						echo "<div class='fadeInDown'>". $output ."</div>";
 					?>
 					
