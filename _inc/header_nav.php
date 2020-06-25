@@ -6,9 +6,11 @@
 
 <div class="side-bar">
 	<div class="nav">
+
+
 		<ul>
 			<a href="crawl.php?str=chipmunk"><li>PROTHOM ALO</li></a>
-			<li>BD PRATIDIN</li>
+			<a href="crawl.php?str=thunder"><li>BD PRATIDIN</li></a>
 		</ul>
 	</div>
 </div>
