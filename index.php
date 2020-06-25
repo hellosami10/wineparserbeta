@@ -30,7 +30,7 @@
 				<ul>
 
 					<li><a href="crawl.php?string=pa">PROTHOM ALO</a></li>
-					<li><a href="crawl.php?string=bdp">BD PRATIDIN</a></li>
+					<li><a href="#">BD PRATIDIN</a></li>
 				</ul>
 			</div>
 		</div>

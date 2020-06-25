@@ -29,7 +29,7 @@
 			<div class="nav">
 				<ul>
 					<li><a href="crawl.php?string=pa">PROTHOM ALO</a></li>
-					<li><a href="crawl.php?string=bdp">BD PRATIDIN</a></li>
+					<li><a href="#">BD PRATIDIN</a></li>
 				</ul>
 			</div>
 		</div>
@@ -37,25 +37,14 @@
 
 		<div class="content-wrap">
 			<div class="content">
-
-				<div class="heading">
-					<small>Million News, One Page</small>
-				</div>
-
-
 				<span class="latest-news-text">সর্বশেষ</span>
-
-
-
 				<ul >
-					
 					<?php
-
-						$output = shell_exec("python pa.py");
+						$string = $_GET['string'] . ".py";
+						echo $string;
+						$output = shell_exec("python {$string}");
 						echo "<div class='fadeInDown'>". $output ."</div>";
 					?>
-					
-
 				</ul>
 			</div>
 		</div>
