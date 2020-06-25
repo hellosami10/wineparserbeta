@@ -42,7 +42,7 @@
 					<?php
 						$string = $_GET['string'] . ".py";
 						echo $string;
-						$output = shell_exec("python {$string}");
+						$output = shell_exec("python '{$string}'");
 						echo "<div class='fadeInDown'>". $output ."</div>";
 					?>
 				</ul>
