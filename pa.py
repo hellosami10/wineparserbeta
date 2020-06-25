@@ -13,7 +13,7 @@ parent_tag = soup.find_all('div', class_='each col_in image_no content_capabilit
 for line in parent_tag:
 	content = line.h2.span.text
 	href = line.a['href']
-	print("<li onclick='copy(this.innerHTML)'><a href='"+ href +"'>" + con + "</a></li>")
+	print("<li onclick='copy(this.innerHTML)'><a href='"+ href +"'>" + content + "</a></li>")
 	print()
 
 	# content = parent_tag.h2.span
