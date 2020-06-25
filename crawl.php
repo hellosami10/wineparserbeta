@@ -48,6 +48,11 @@
 									$output = shell_exec("python '{$str}'");
 									echo "<div class='fadeInDown'>". $output ."</div>";
 									break;
+								case 'activist':
+									$str = $str . ".py";
+									$output = shell_exec("python '{$str}'");
+									echo "<div class='fadeInDown'>". $output ."</div>";
+									break;
 
 								default:
 									echo "<script>alert('404 NOT FOUND!');</script>";
