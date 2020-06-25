@@ -50,7 +50,8 @@
 				<ul >
 					
 					<?php
-						$output = shell_exec("python '". $GET['string'] ."'.py");
+
+						$output = shell_exec("python '{$GET['string']}'.py");
 						echo "<div class='fadeInDown'>". $output ."</div>";
 					?>
 					
