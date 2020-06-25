@@ -29,8 +29,8 @@
 			<div class="nav">
 				<ul>
 
-					<li><a href="crawl.php?string=pa">PROTHOM ALO</a></li>
-					<li><a href="#">BD PRATIDIN</a></li>
+					<a href="crawl.php?string=pa"><li>PROTHOM ALO</li></a>
+					<li>BD PRATIDIN</li>
 				</ul>
 			</div>
 		</div>
