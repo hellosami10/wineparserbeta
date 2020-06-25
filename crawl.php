@@ -19,31 +19,45 @@
 <body>
 	
 	<div class="wraper">
-		<div>
-			<div class="header">
-				<h1>Wine Parser <sup>BETA</sup></h1>
-			</div>
-		</div>
-
-		<div class="side-bar">
-			<div class="nav">
-				<ul>
-					<a href="crawl.php?string=pa"><li>PROTHOM ALO</li></a>
-					<li>BD PRATIDIN</li>
-				</ul>
-			</div>
-		</div>
-
+		<?php
+			include '_inc/header_nav.php';
+		?>
 
 		<div class="content-wrap">
 			<div class="content">
 				<span class="latest-news-text">সর্বশেষ</span>
 				<ul >
 					<?php
-						$string = $_GET['string'] . ".py";
-						$output = shell_exec("python '{$string}'");
-						echo "<div class='fadeInDown'>". $output ."</div>";
+					/*
+						prothomalo=chipmunk
+						jago=activist
+						kaler konto=leftover
+						bdpratidin=thunder
+					*/
+						$str = $_GET['str'];
+						if(isset($str)) {
+							switch($str) {
+								// prothomalo=chipmunk
+								case 'chipmunk':
+									$str = $str . ".py";
+									echo $str;
+									$output = shell_exec("python '{$str}'");
+									echo "<div class='fadeInDown'>". $output ."</div>";
+									break;
+								case 'thunder':
+									$str = $str . ".py";
+									echo $str;
+									$output = shell_exec("python '{$str}'");
+									echo "<div class='fadeInDown'>". $output ."</div>";
+									break;
+
+								default:
+									echo "<script>alert('404 NOT FOUND!');</script>";
+							}
+						}
+				
 					?>
+
 				</ul>
 			</div>
 		</div>

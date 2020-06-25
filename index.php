@@ -19,21 +19,9 @@
 <body>
 	
 	<div class="wraper">
-		<div>
-			<div class="header">
-				<h1>Wine Parser <sup>BETA</sup></h1>
-			</div>
-		</div>
-
-		<div class="side-bar">
-			<div class="nav">
-				<ul>
-
-					<a href="crawl.php?string=pa"><li>PROTHOM ALO</li></a>
-					<li>BD PRATIDIN</li>
-				</ul>
-			</div>
-		</div>
+		<?php
+			include '_inc/header_nav.php';
+		?>
 
 
 		<div class="content-wrap">

@@ -47,8 +47,11 @@ text-decoration: none;
 		}
 
 		.nav li::before {
-			content: '📰';
+			content: url('../images/bullet.png');
 			margin-right: 5px;
+			position: relative;
+			top: 4px;
+			left: 1px;
 		}
 
 		.nav li:hover {
@@ -73,8 +76,8 @@ text-decoration: none;
 		}
 
 		.header h1::before {
-			content: '🍷';
-			margin-right: 5px;
+			content: url('../images/site-logo.png');
+			vertical-align: -30%;
 		}
 
 		.content ul{
