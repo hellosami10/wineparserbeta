@@ -40,13 +40,11 @@
 								// prothomalo=chipmunk
 								case 'chipmunk':
 									$str = $str . ".py";
-									echo $str;
 									$output = shell_exec("python '{$str}'");
 									echo "<div class='fadeInDown'>". $output ."</div>";
 									break;
 								case 'thunder':
 									$str = $str . ".py";
-									echo $str;
 									$output = shell_exec("python '{$str}'");
 									echo "<div class='fadeInDown'>". $output ."</div>";
 									break;
