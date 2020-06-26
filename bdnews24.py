@@ -3,7 +3,7 @@
 from bs4 import BeautifulSoup
 import requests
 
-source = requests.get('https://bangla.bdnews24.com/archive/?date=2020-06-26')
+source = requests.get('https://bangla.bdnews24.com/archive/')
 soup = BeautifulSoup(source.text, 'lxml')
 
 parent_tag = soup.find('ul', class_='contentUL')
