@@ -39,7 +39,7 @@
 						$pg = $_GET['pg'];
 						if(!isset($pg)) {
 							$pg = 1;
-						} else { // }
+						} else { }
 
 
 						if(isset($str)) {
@@ -56,7 +56,7 @@
 									echo "<div class='fadeInDown'>". $output ."</div>";
 									break;
 								case 'activist':
-									$date = date("d/m/Y"); // 25/06/2020
+									$date = date("d/m/Y");
 
 									$str = $str . ".py";
 									$output = shell_exec("python '{$str}' '{$date}' '{$pg}'");
