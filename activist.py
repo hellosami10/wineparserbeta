@@ -19,14 +19,14 @@ for line in content:
 	href = line.a['href']
 	content = line.a.text
 
-	#print("<li><a target='_blank' href='"+ href +"'>" + content + "</a></li>")
+	print("<li><a target='_blank' href='"+ href +"'>" + content + "</a></li>")
 
 # 	print(content)
 # 	print()
 
-	with open('jjago_dump.txt', "a", encoding="utf-8") as f:
-	    f.write(content)
-	    f.write('\n')
+	# with open('jjago_dump.txt', "a", encoding="utf-8") as f:
+	#     f.write(content)
+	#     f.write('\n')
 
 # print()
 # print('Done !!')
