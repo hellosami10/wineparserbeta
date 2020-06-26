@@ -1,94 +1,37 @@
+
+
+
+
 <?php
 									date_default_timezone_set("Asia/Dhaka");
 
 
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Red Wine</title>
-<link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet"> 
-
-<link rel="stylesheet" href="css/style.css">
 
 
-</head>
+
+
+
+<?php include '_inc/_header.php'; ?>
+
+
 <body>
-	
+	<div class="header">
+		<h1>Wine Parser <sup>BETA</sup></h1>
+	</div>
 	<div class="wraper">
-		<?php
-			include '_inc/header_nav.php';
-		?>
+		<?php include '_inc/header_nav.php'; ?>
 
-		<div class="content-wrap">
-			<div class="content">
-				<span class="latest-news-text">সর্বশেষ</span>
-				<ul >
-					<?php
-					/*
-						prothomalo=chipmunk
-						jago=activist
-						kaler konto=leftover
-						bdpratidin=thunder
-					*/
-						$str = $_GET['str'];
+		<div class="container result-panel">
+			<ul>
+				<?php include '_inc/crawler.php' ?>
 
-
-						$pg = $_GET['pg'];
-						if(!isset($pg)) {
-							$pg = 1;
-						} else { }
-
-
-						if(isset($str)) {
-							switch($str) {
-								// prothomalo=chipmunk
-								case 'chipmunk':
-									$str = $str . ".py";
-									$output = shell_exec("python '{$str}'");
-									echo "<div class='fadeInDown'>". $output ."</div>";
-									break;
-								case 'thunder':
-									$str = $str . ".py";
-									$output = shell_exec("python '{$str}'");
-									echo "<div class='fadeInDown'>". $output ."</div>";
-									break;
-								case 'activist':
-									$date = date("d/m/Y");
-
-									$str = $str . ".py";
-									$output = shell_exec("python '{$str}' '{$date}' '{$pg}'");
-
-									echo "<div class='fadeInDown'>". $output ."</div>";
-
-
-
-
-									$str = "activist-pagi.py";
-									$count = shell_exec("python '{$str}' '{$date}'");
-									echo "<div class='pagination'>";
-									for($i = 1; $i <= $count; $i++) {
-										echo "<a href='crawl.php?str=activist&pg=$i'><span>$i</span></a>";
-									}
-									echo "</div>";
-
-
-									break;
-
-								default:
-									echo "<script>alert('404 NOT FOUND!');</script>";
-							}
-						}
-				
-					?>
-
-				</ul>
-			</div>
+			</ul>
 		</div>
 
 	</div>
+</body>
 
 
 <textarea id="demo" aria-hidden="true"></textarea>
@@ -106,3 +49,6 @@ function copy(text) {
 </body>
 
 </html>
+
+
+

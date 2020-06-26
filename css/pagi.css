@@ -1,0 +1,16 @@
+.pagination span {
+    background-color: #970044;
+    color: #FFF;
+    padding: 4px 8px;
+    border-radius: 2px;
+    margin: 0 6px;
+    margin-left: 6px;
+}
+
+.pagination span:first-child {
+    margin-left: 0;
+}
+
+.pagination span:hover {
+    color: #FF0;
+    cursor: pointer;

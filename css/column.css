@@ -1,0 +1,40 @@
+.container {
+	width: 80%;
+	float: right;
+	padding: 16px;
+	margin: 0 16px;
+	background-color: #CCC;
+
+}
+
+.container > h1 {
+	font-family: 'Teko', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	display: inline;
+}
+
+
+.result-panel {
+	background-color: #F4F4F4;
+	height: 420px;
+	overflow-y: scroll;
+}
+
+.result-panel > ul {
+  list-style: none;
+  margin: 0 16px;
+}
+
+.result-panel > ul li::before {
+  content: "\25C6";
+  color: #00d792;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+
+.result-panel > ul li {
+  margin-bottom: 16px;
+}

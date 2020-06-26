@@ -1,0 +1,32 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.wraper {
+	max-width: 768px;
+	margin: 0 auto;
+  display: flex;
+}
+
+[aria-hidden="true"] {
+  opacity: 0;
+  position: absolute;
+  z-index: -9999;
+  pointer-events: none;
+}
+
+::-moz-selection {
+    background-color: transparent;
+    color: #000;
+}
+
+::selection {
+    background-color: transparent;
+    color: #000;
+}
+
+.myclass::-moz-selection,
+.myclass::selection { ... }
+
+

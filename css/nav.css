@@ -1,0 +1,43 @@
+.nav {
+	width: 20%;
+	float:left;
+}
+
+.nav > ul {
+	margin: 0;
+	padding: 0;
+}
+
+.nav > ul li {
+	list-style-type: none;
+	background-color: #970044;
+	color: #FFF;
+	border-radius: 2px;
+	margin: 4px 0;
+	float: left;
+	width: 100%;
+}
+
+.nav > ul li, .header h1 {
+	font-family: 'Teko', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.nav > ul li:hover {
+
+	color: #FFFF00;
+	cursor: pointer;
+}
+
+.nav > ul li::before {
+	content: url('../images/bullet.png');
+	margin-right: 5px;
+	position: relative;
+	top: 4px;
+	left: 1px;
+}
+
+.nav > ul li.active {
+	color: yellow!important;
+}
