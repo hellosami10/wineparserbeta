@@ -1,6 +1,5 @@
 <?php
-// $output = shell_exec("python bdp.py");
-// echo "output: " . $output;
+									date_default_timezone_set("Asia/Dhaka");
 
 
 ?>
@@ -35,6 +34,14 @@
 						bdpratidin=thunder
 					*/
 						$str = $_GET['str'];
+
+
+						$pg = $_GET['pg'];
+						if(!isset($pg)) {
+							$pg = 1;
+						} else { // }
+
+
 						if(isset($str)) {
 							switch($str) {
 								// prothomalo=chipmunk
@@ -49,9 +56,24 @@
 									echo "<div class='fadeInDown'>". $output ."</div>";
 									break;
 								case 'activist':
+									$date = date("d/m/Y"); // 25/06/2020
+
 									$str = $str . ".py";
-									$output = shell_exec("python '{$str}'");
+									$output = shell_exec("python '{$str}' '{$date}' '{$pg}'");
 									echo "<div class='fadeInDown'>". $output ."</div>";
+
+
+
+
+									$str = $str . "-pagi.py";
+									$output = shell_exec("python '{$str}' '{$date}'");
+									echo "<div class='pagination'>";
+									for($i = 2; $i <= $count; $i++) {
+										echo "<a href=''><span>$i</span></a>";
+									}
+									echo "</div>";
+
+
 									break;
 
 								default:
