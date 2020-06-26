@@ -27,6 +27,11 @@ if(isset($str)) {
 			$output = shell_exec("python '{$str}'");
 			echo "<div class='fadeInDown'>". $output ."</div>";
 			break;
+		case 'bdnews24':
+			$str = $str . ".py";
+			$output = shell_exec("python '{$str}'");
+			echo "<div class='fadeInDown'>". $output ."</div>";
+			break;
 		case 'activist':
 			$date = date("d/m/Y");
 

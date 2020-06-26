@@ -1,6 +1,10 @@
 <?php include '_inc/_header.php'; ?>
 
+<!--
 
+kalerkontho
+bdnews, barta24
+ -->
 <body>
 	<div class="header">
 		<h1>Wine Parser <sup>BETA</sup></h1>
