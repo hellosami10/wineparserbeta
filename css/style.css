@@ -16,7 +16,7 @@
 
 		.nav ul a {
 			color: #FFF;
-text-decoration: none;
+			text-decoration: none;
 		}
 		.content ul {
 			margin: 0 0 32px 0;
@@ -249,7 +249,7 @@ float:right;
     padding: 4px 8px;
     border-radius: 2px;
     margin: 0 6px;
-        margin-left: 6px;
+     margin-left: 6px;
 }
 
 .pagination span:first-child {
