@@ -129,7 +129,7 @@
 		  src: url('fonts/BalooDa2-Medium.ttf');
 		}
 
-		.content span {
+		.content > span {
 			color: #FF0000;
 			display: inline-block;
 			margin: 0 0 16px 14px;
