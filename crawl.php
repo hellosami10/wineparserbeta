@@ -66,13 +66,13 @@
 
 
 
-									// $str = $str . "-pagi.py";
-									// $output = shell_exec("python '{$str}' '{$date}'");
-									// echo "<div class='pagination'>";
-									// for($i = 2; $i <= $count; $i++) {
-									// 	echo "<a href=''><span>$i</span></a>";
-									// }
-									// echo "</div>";
+									$str = $str . "-pagi.py";
+									$output = shell_exec("python '{$str}' '{$date}'");
+									echo "<div class='pagination'>";
+									for($i = 2; $i <= $count; $i++) {
+										echo "<a href=''><span>$i</span></a>";
+									}
+									echo "</div>";
 
 
 									break;
