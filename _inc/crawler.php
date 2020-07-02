@@ -37,7 +37,6 @@ if(isset($str)) {
 			$output = shell_exec("python '{$str}'");
 			echo "<div class='fadeInDown'>". $output ."</div>";
 			break;
-			banglatribune
 		case 'barta24':
 			$str = $str . ".py";
 			$output = shell_exec("python '{$str}'");
