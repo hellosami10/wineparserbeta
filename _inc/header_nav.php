@@ -6,5 +6,6 @@
 		<a href="crawl.php?str=bdnews24"><li>BDNEWS24</li></a>
 		<a href="crawl.php?str=kalerkantho"><li>KALER KANTHO</li></a>
 		<a href="crawl.php?str=barta24"><li>BARTA24</li></a>
+		<a href="crawl.php?str=banglatribune"><li>banglatribune</li></a>
 	</ul>
 </div>
