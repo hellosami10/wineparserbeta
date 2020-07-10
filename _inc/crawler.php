@@ -47,6 +47,12 @@ if(isset($str)) {
 			$output = shell_exec("python '{$str}'");
 			echo "<div class='fadeInDown'>". $output ."</div>";
 			break;
+		case 'ittefaq':
+			$str = $str . ".py";
+			$url = "<script>ittefaqGetPgNo();</script>";
+			$output = shell_exec("python '{$str}' '{$url}'");
+			echo "<div class='fadeInDown'>". $output ."</div>";
+			break;	
 		case 'activist':
 			$date = date("d/m/Y");
 

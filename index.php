@@ -26,15 +26,26 @@ bdnews, barta24
 <textarea id="demo" aria-hidden="true"></textarea>
 
 <script>
-
-
 function copy(text) {
 	var t = document.getElementById("demo");
 	t.value = text;
 	t.select();
 	document.execCommand("copy");
 }
+
+function ittefaqGetPgNo() {
+	var url_string = window.location.href; //window.location.href
+	var url = new URL(url_string);
+	var pg = url.searchParams.get("pg");
+	pg = parseInt(pg) + 1;
+	sendURL = "https://www.ittefaq.com.bd/all-news/?pg="+ pg;
+	document.write(sendURL)
+}
 </script>
+
+
+
+
 </body>
 
 </html>

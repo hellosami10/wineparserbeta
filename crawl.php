@@ -45,6 +45,9 @@ function copy(text) {
 	t.select();
 	document.execCommand("copy");
 }
+
+
+function 
 </script>
 </body>
 
