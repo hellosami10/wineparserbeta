@@ -21,7 +21,7 @@ bdnews, barta24
 
 	</div>
 </body>
-
+<!-- -->
 
 <textarea id="demo" aria-hidden="true"></textarea>
 
