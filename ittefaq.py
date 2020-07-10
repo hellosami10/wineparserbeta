@@ -14,6 +14,7 @@ soup = BeautifulSoup(source.text, 'lxml')
 content = soup.find('div', id='main_content_list')
 content = content.find_all('div', class_="allnews")
 
+flag = 1
 
 
 
@@ -28,10 +29,14 @@ for line in content:
 
 	if date == '১০':
 		print("<li><a target='_blank' href='"+ href +"'>" + content + "</a></li>")
-		css_class = "more"
+		
 	else:
-		css_class = "end"
+		flag = 0
 		break;
-print("<button onclick='ittefaqGetPgNo()' class='"+ css_class +"'>"+"More</button>")
+
+if flag == 1:
+	print("<button onclick='ittefaqGetPgNo()' class='more'>"+"আরও দেখুন</button>")
+else:
+	print("<button onclick='' class='more-disabled'>"+"শেষ</button>")
 
 	
