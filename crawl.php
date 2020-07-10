@@ -50,7 +50,7 @@ function ittefaqGetPgNo() {
 	var pg = url.searchParams.get("pg");
 
 	pg = parseInt(pg) + 1;
-	window.location.href = 'crawl.php?str=ittefaq?pg=' + pg;
+	window.location.href = 'crawl.php?str=ittefaq&&pg=' + pg;
 }
 </script>
 </body>
