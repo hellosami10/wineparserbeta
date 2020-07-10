@@ -37,8 +37,6 @@
 <textarea id="demo" aria-hidden="true"></textarea>
 
 <script>
-
-
 function copy(text) {
 	var t = document.getElementById("demo");
 	t.value = text;
@@ -46,8 +44,14 @@ function copy(text) {
 	document.execCommand("copy");
 }
 
+function ittefaqGetPgNo() {
+	var url_string = window.location.href;
+	var url = new URL(url_string);
+	var pg = url.searchParams.get("pg");
 
-function 
+	pg = parseInt(pg) + 1;
+	window.location.href = 'crawl.php?str=ittefaq?pg=' + pg;
+}
 </script>
 </body>
 
