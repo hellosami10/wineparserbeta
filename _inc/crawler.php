@@ -49,8 +49,7 @@ if(isset($str)) {
 			break;
 		case 'ittefaq':
 			$str = $str . ".py";
-			$url = "<script>ittefaqGetPgNo();</script>";
-			$output = shell_exec("python '{$str}' '{$url}'");
+			$output = shell_exec("python '{$str}' '{$pg}'");
 			echo "<div class='fadeInDown'>". $output ."</div>";
 			break;	
 		case 'activist':

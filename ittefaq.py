@@ -5,10 +5,10 @@ import sys
 from bs4 import BeautifulSoup
 import requests
 
-url = str(sys.argv[1])
+pg = str(sys.argv[1])
 
 
-source = requests.get(url)
+source = requests.get("https://www.ittefaq.com.bd/all-news/?pg=" + pg)
 soup = BeautifulSoup(source.text, 'lxml')
 
 content = soup.find('div', id='main_content_list')

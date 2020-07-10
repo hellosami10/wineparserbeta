@@ -34,12 +34,12 @@ function copy(text) {
 }
 
 function ittefaqGetPgNo() {
-	var url_string = window.location.href; //window.location.href
+	var url_string = window.location.href;
 	var url = new URL(url_string);
 	var pg = url.searchParams.get("pg");
+
 	pg = parseInt(pg) + 1;
-	sendURL = "https://www.ittefaq.com.bd/all-news/?pg="+ pg;
-	document.write(sendURL)
+	window.location.href = 'crawl.php?str=ittefaq?pg=' + pg;
 }
 </script>
 
