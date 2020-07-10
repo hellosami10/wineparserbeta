@@ -24,6 +24,9 @@
 .result-panel > ul {
   list-style: none;
   margin: 0 16px;
+  font-family: BalooDa2-Regular;
+  font-size: 18px;
+  line-height: 1;
 }
 
 .result-panel > ul li::before {
