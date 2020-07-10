@@ -16,6 +16,6 @@
 		<a href="crawl.php?str=kalerkantho"><li class="<?php chk_active('kalerkantho');?>">KALER KANTHO</li></a>
 		<a href="crawl.php?str=barta24"><li class="<?php chk_active('barta24');?>">BARTA24</li></a>
 		<a href="crawl.php?str=banglatribune"><li class="<?php chk_active('banglatribune');?>">BANGLA TRIBUNE</li></a>
-		<a href="crawl.php?str=ittefaq&&pg="><li class="<?php chk_active('ittefaq');?>">ITTEFAQ</li></a>
+		<a href="crawl.php?str=ittefaq&&pg=0"><li class="<?php chk_active('ittefaq');?>">ITTEFAQ</li></a>
 	</ul>
 </div>
