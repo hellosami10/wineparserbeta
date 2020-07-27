@@ -47,11 +47,19 @@ if(isset($str)) {
 			$output = shell_exec("python '{$str}'");
 			echo "<div class='fadeInDown'>". $output ."</div>";
 			break;
+
+
 		case 'ittefaq':
 			$str = $str . ".py";
 			$output = shell_exec("python '{$str}' '{$pg}'");
 			echo "<div class='fadeInDown'>". $output ."</div>";
 			break;	
+
+
+
+
+
+
 		case 'activist':
 			$date = date("d/m/Y");
 
@@ -73,6 +81,48 @@ if(isset($str)) {
 
 
 			break;
+
+
+
+
+
+
+
+
+
+
+
+
+
+		case 'netra':
+			// $date = date("d/m/Y");
+
+			$str = $str . ".py";
+			$output = shell_exec("python '{$str}' '{$pg}'");
+
+
+			echo "<div class='fadeInDown'>". $output ."</div>";
+
+
+
+
+			$str = "netra-pagi.py";
+			$count = shell_exec("python '{$str}'");
+
+			echo "<div class='pagination'>";
+			for($i = 1; $i <= $count; $i++) {
+				echo "<a href='crawl.php?str=netra&pg=$i'><span>$i</span></a>";
+			}
+			echo "</div>";
+
+
+			break;
+
+
+
+
+
+
 
 		default:
 			echo "<script>alert('404 NOT FOUND!');</script>";
