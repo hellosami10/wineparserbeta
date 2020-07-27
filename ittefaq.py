@@ -14,6 +14,10 @@ soup = BeautifulSoup(source.text, 'lxml')
 content = soup.find('div', id='main_content_list')
 content = content.find_all('div', class_="allnews")
 
+current_date = soup.find('span', class_="date font-weight-bold").text
+current_date = current_date.split(",")[1]
+current_date = current_date.split(" ")[1]
+
 flag = 1
 
 
@@ -27,7 +31,7 @@ for line in content:
 	date = date[1].split(" ")
 	date = date[1]
 
-	if date == '১০':
+	if date == current_date:
 		print("<li><a target='_blank' href='"+ href +"'>" + content + "</a></li>")
 		
 	else:
